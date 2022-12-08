@@ -1,0 +1,45 @@
+<div class="row justify-content-center mt-5"> 
+    <div class="col-md-4">
+      <form [formGroup]="updateForm1" (ngSubmit)="onUpdate()">
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            class="form-control"
+            type="text"
+            formControlName="name"
+            required
+          />
+        </div>
+  
+        <div class="form-group">
+          <label>email</label>
+          <input
+            class="form-control"
+            type="email"
+            formControlName="email"
+            
+            required
+          />
+        </div>
+  
+        <div class="form-group">
+          <label>User Type</label>
+          <input
+            class="form-control"
+            type="text"
+            formControlName="userType"
+            required
+          />
+        </div>
+        
+  
+        <div class="form-group">
+  
+          <button class="btn btn-sm btn-primary" type="submit" routerLink="/logout">Update</button>
+          
+          <button class="btn btn-sm btn-danger" routerLink="/user-profile">Cancel</button>
+  
+        </div>
+      </form>
+    </div>
+   </div>

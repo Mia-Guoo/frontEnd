@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="inner-main">
+        <h2 class="mb-4">User Profile</h2>
+        <p><strong>Name:</strong> {{ this.currentUser.name }}</p>
+        <p><strong>Email:</strong> {{ this.currentUser.email }}</p>
+        <p><strong>User ID:</strong> {{ this.currentUser.userId }}</p>
+        <p><strong>Type:</strong> {{ this.currentUser.userType }}</p>
+        <p>
+          <button class="btn btn-sm btn-primary" routerLink="/user-edit/{{ currentUser._id }}">Edit </button>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+  
